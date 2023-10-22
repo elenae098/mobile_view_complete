@@ -32,6 +32,7 @@
     }
     #on {
         color: rgb(103, 99, 99);
+        font-weight: bolder;
     }
     .sidenav .exitButton {
         position: absolute;
