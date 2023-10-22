@@ -28,12 +28,12 @@
     
 
     <div id = "main">
-        <div id = "page">
+        <div class = "page">
             <h2>Pesto Pasta</h2>
             <img class = "thumbnail" src = "https://www.simplyrecipes.com/thmb/CwtgHPm56p-B6mj2HIz9pSN7rho=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2014__08__Fresh-Basil-Pesto-LEAD-1-87df8d92c4ab49508815a29557f86104.jpg" alt = "Fresh basil pesto" >
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <p>Origin: Italian</p>
                 <p>Source: Internet</p>
                 <p>Category: Main Dish</p>
@@ -70,13 +70,13 @@
             </div>
             <!-- Elena Elkin -->
         </div>
-        <div id = "page">
+        <div class = "page">
             <h2>Homemade Matcha Cookies</h2>
 
             <img class = "thumbnail" src="images/Matcha-Cookies.jpeg" width="400" alt="Green matcha cookies served on a black plate.">
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <p>Origin: Japanese</p>
                 <p>Source: https://www.justonecookbook.com/green-tea-white-chocolate-cookies/</p>
                 <p>Category: Dessert</p>
@@ -124,12 +124,12 @@
             </div>
             <!-- Emily Ma -->
         </div>
-        <div id = "page">
+        <div class = "page">
             <h2>Shrimp Scampi</h2>
             <img class = "thumbnail" src="images/shrimp-scampi.jpg" alt = "Shrimp scampi on a plate.">
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <p>Shrimp scampi is a classic Italian-American delight,
                     where succulent shrimp meet a medley of garlic, butter, and white wine. Sautéed to pink perfection,
                     the shrimp mingle with a fragrant blend of garlic and red pepper flakes. A drizzle of white wine and
@@ -164,31 +164,32 @@
         <div></div>
         <div></div>
     </div>
-
+    <script>
+        function openNav() {
+          document.getElementById("ThreeBarNav").style.width = "300px";
+        }
+    </script>
+    <script> function exitNav() {
+        document.getElementById("ThreeBarNav").style.width = "0";
+      }
+    </script>
+    <script> var collapse = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < collapse.length; i++) {
+        collapse[i].addEventListener("click", function() {
+            var section = this.nextElementSibling;
+            if (section.style.display === "block") {
+                section.style.display = "none";
+            } 
+            else {
+                section.style.display = "block";
+            }
+        });
+        } 
+    </script>  
 
 </body>
-<script>
-    function openNav() {
-      document.getElementById("ThreeBarNav").style.width = "300px";
-    }
-    
-    function exitNav() {
-      document.getElementById("ThreeBarNav").style.width = "0";
-    }
 
-    var collapse = document.getElementsByClassName("collapsible");
-    for (var i = 0; i < collapse.length; i++) {
-    collapse[i].addEventListener("click", function() {
-        var section = this.nextElementSibling;
-        if (section.style.display === "block") {
-            section.style.display = "none";
-        } 
-        else {
-            section.style.display = "block";
-        }
-    });
-    }   
 
-</script>
+
 </html>
 
