@@ -16,7 +16,7 @@
         <div id="ThreeBarNav" class = "sidenav">
             <a href="javascript:void(0)" class = "exitButton" onclick="exitNav()">&times;</a>
             <a href = "#main" id = "skip">Skip to Main Content</a>
-            <a href="index.html">Home/Recipes</a>
+            <a id = "on" href="index.html">Home/Recipes</a>
             <a href="pets.html">Pets</a>
             <a href="travel.html">Travel</a>
         </div>
@@ -119,7 +119,7 @@
                 <div class = "images">
                     <img src="images/Cookies-on-tray.jpeg" alt="Close up of matcha cookies on baking tray">
                     <img src="images/Matcha-and-flour.jpeg"  alt="Matcha and flour sifted into a bowl">
-                    <img src="images/cookie-dough.jpeg" alt="Raw matcha cookie dough shaped into a cylinder">
+                    <img src="images/cookie-dough.jpeg"  alt="Raw matcha cookie dough shaped into a cylinder">
                 </div>
             </div>
             <!-- Emily Ma -->
@@ -181,9 +181,10 @@
     collapse[i].addEventListener("click", function() {
         var section = this.nextElementSibling;
         if (section.style.display === "block") {
-        section.style.display = "none";
-        } else {
-        section.style.display = "block";
+            section.style.display = "none";
+        } 
+        else {
+            section.style.display = "block";
         }
     });
     }   
