@@ -29,12 +29,12 @@
     
 
     <div id = "main">
-        <div id = "page">
+        <div class = "page">
             <h2>Barcelona, Spain</h2>
             <img class = "thumbnail" id = "gif" src="images/barcelona_gif.gif" alt="Gif of La Sagrada Familia" width="400">
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <p>Barcelona is located on the northeastern coast of Spain and is the capital of Catalonia. Barcelona is home to 1.6 million people and contains multiple different historical landmarks and interesting architecture. </p>
                 <p>Barcelona is famous for its notable architects including Antoni Gaudí and Lluís Domènech i Montaner. These architects built La Sagrada Familia, Park Guell, and Palau de la Música Catalana which are among the most famous constructions in Barcelona. Both architects are famous for their Modernisme style buildings notable for their distinct colors and organic shapes.</p>
                 <h3>Photo Gallery</h3>
@@ -48,12 +48,12 @@
                    
             </div>
         </div>
-        <div id = "page">
+        <div class = "page">
             <h2>  Nanjing Fuzi-Qinhuai </h2>
             <img class = "thumbnail" src = "images/qinhuai.JPG" width = 400 alt = "qinhuai river photo at night">
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <p>Nanjing is a popular city full of Chinese history and old traditional southern kinds of agriculture. As a northern people from China, Nanjing was the first city that I traveled to the region south of the Yangtze River. Confucius Temple - Qinhuai River is the most famous place to show the beauty of Nanjing.</p>
                 <p>Confucius temple has many traditional temple agricultures inside and many small shops about traditional Nanjing specialties and popular restaurants. There are also many colorful traditional lanterns which made the night of qinhuai more gorgeous. People can also take the “Hua Fang” ( a special kind of ship) to travel around the river and the whole scenery.  </p>
                 <h3>Photo Gallery</h3>
@@ -83,13 +83,13 @@
                 
             </div>
         </div>
-        <div id = "page">
+        <div class = "page">
             <h2>Florence</h2>
 
             <img class = "thumbnail" src="images/duomo_di_firenze.jpg" width="400" alt="Duomo close up.">
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <h3>Geographical Location: Europe</h3>
                 <p>Florence is located north of Rome and is the capital of Italy’s Tuscany region. One of its most iconic landmarks is the Duomo, a cathedral with a terracotta-tiled dome engineered by Brunelleschi. It is also home to the Uffizi gallery, which hosts Michelangelo’s famous “David” sculpture.</p>
                 <p>Florence is the capital city of the region of Tuscany in Central Italy. It is also the most populated city in Tuscany, with 360,930 inhabitants in 2023, and 984,991 in its metropolitan area. Florence was a centre of medieval European trade and finance and one of the wealthiest cities of that era  It is considered by many academics to have been the birthplace of the Renaissance, becoming a major artistic, cultural, commercial, political, economic and financial center.</p>
@@ -124,13 +124,13 @@
 
             </div>
         </div>
-        <div id = "page">
+        <div class = "page">
             <h2>San Francisco, California</h2>
 
             <img class = "thumbnail" id = "gif" src="images/San_Francisco_bridge.gif" alt="San Francisco is a great location to visit with many landmarks, including the Golden Gate Bridge and Alcatraz. Located in Northern California, San Francisco is one of the most populated cities in California with a population of 815,000. The city is also a center of culture and industry. San Francisco is home to a thriving tech industry." width = 400>
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <p>Geographical Location: North America</p>
                 
                 <h3>Photo Gallery</h3>
@@ -169,7 +169,7 @@
             <img class = "thumbnail" id = "gif" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
 
                 <h3>Geographical Location: North America</h3>
@@ -220,7 +220,7 @@
             <img class = "thumbnail" id = "gif" src="images/nice_france.gif" width="400" alt="Nice, France beach">
             <br>
             <button style = "text-align: center; display:block; margin-left:auto; margin-right:auto; width:80%;" type="button" class="collapsible" >Learn More</button>
-            <div id = "section">
+            <div class = "section">
                 <img src="images/nice_france.jpeg" width = "400" alt="Nice, France street">
 
                 <h3>Geographical Location: Europe</h3>
@@ -259,27 +259,27 @@
             </div>
         </div>
     </main>
-</body>
-<script>
-    function openNav() {
-      document.getElementById("ThreeBarNav").style.width = "300px";
-    }
-    
-    function exitNav() {
-      document.getElementById("ThreeBarNav").style.width = "0";
-    }
-
-    var collapse = document.getElementsByClassName("collapsible");
-    for (var i = 0; i < collapse.length; i++) {
-    collapse[i].addEventListener("click", function() {
-        var section = this.nextElementSibling;
-        if (section.style.display === "block") {
-        section.style.display = "none";
-        } else {
-        section.style.display = "block";
+    <script>
+        function openNav() {
+          document.getElementById("ThreeBarNav").style.width = "300px";
         }
-    });
-    }   
-
-</script>
+    </script>
+    <script> function exitNav() {
+        document.getElementById("ThreeBarNav").style.width = "0";
+      }
+    </script>
+    <script> var collapse = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < collapse.length; i++) {
+        collapse[i].addEventListener("click", function() {
+            var section = this.nextElementSibling;
+            if (section.style.display === "block") {
+                section.style.display = "none";
+            } 
+            else {
+                section.style.display = "block";
+            }
+        });
+        } 
+    </script>  
+</body>
 </html>
