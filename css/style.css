@@ -1,5 +1,5 @@
 
-    #page {
+    .page {
         width: 80%;
         margin: auto;
         padding-bottom: 20px;
@@ -75,11 +75,7 @@
         color: rgb(219, 98, 168); 
         text-align: center;
     }
-    .section {
-        height: 1em;
-        padding: 2px;
-        overflow: hidden    
-    }
+
 
     .collapsible {
         font-family: 'Source Sans Pro', sans-serif;
@@ -98,7 +94,7 @@
         background-color: rgb(248, 164, 213);
     }
       
-    #section {
+    .section {
         padding: 30px 30px;
         display: none;
         overflow: hidden;
