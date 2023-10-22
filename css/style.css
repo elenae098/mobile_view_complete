@@ -24,13 +24,15 @@
         font-size: 25px;
         color: black;
         display: block;
-        transition: 0.1s;
+        transition: 0.2s;
     }
-      
+
     .sidenav a:hover {
         color: #f1f1f1;
     }
-      
+    #on {
+        color: rgb(103, 99, 99);
+    }
     .sidenav .exitButton {
         position: absolute;
         top: 0;
@@ -38,6 +40,7 @@
         font-size: 36px;
         margin-left: 50px;
     }
+
     .headerBar{
         display:flex;
         justify-content:space-between;
@@ -51,7 +54,12 @@
         margin: auto;
         width: 75%;
     }
-    
+    h1 {
+        width: 90%;
+        text-align: center;
+        
+    }
+
     h2 {
         font-family: 'Source Sans Pro', sans-serif;
         text-align: center;
@@ -72,7 +80,7 @@
         padding: 2px;
         overflow: hidden    
     }
-    /* Style the button that is used to open and close the collapsible content */
+
     .collapsible {
         font-family: 'Source Sans Pro', sans-serif;
         background-color: rgb(219, 98, 168); 
@@ -102,11 +110,7 @@
         border: 10px solid rgb(248, 164, 213);
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
-    }
-    
-    img {
-        max-width: 60%;
+        width: 60%;
     }
 
     p {
@@ -121,6 +125,25 @@
         content: '\1F497';
         margin-left: -20px; 
         margin-right: 10px;
+    }
+
+    #skip {
+        display: none;
+    }
+
+    .on {
+        color: rgb(199, 195, 195);
+    }
+    .images {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    .images img{
+        border: 3px solid white;
+        margin: 10px;
+        width: 90%;
     }
 
 
@@ -139,13 +162,8 @@
 }
 
 @media screen and (min-width: 768px) {
-    .images img{
-        border: 3px solid white;
-        height: 200px;
+    #skip {
+        display: block;
     }
-    .images {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 50% 50%;
-    }
+
 }
