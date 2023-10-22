@@ -151,7 +151,7 @@
     .sidenav a {
         transition: 0s;
     }
-    #gif {
+    .gif {
         animation: none;
         display:none;
     }
